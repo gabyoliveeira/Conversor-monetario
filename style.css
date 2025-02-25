@@ -1,0 +1,122 @@
+/* Estilo básico para o corpo da página */
+body {
+    font-family: Consolas, monospace;
+    background-color: #d9fdc4;
+    margin: 10;
+    padding: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo para o contêiner principal */
+.container {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 23px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+}
+
+/* Estilo para os títulos */
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para os elementos de formulário */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+select, input[type="number"] {
+    width: 45%;
+    padding: 10px;
+    border: 2px solid #007c42;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+/* Estilo para o botão de troca */
+button#swap {
+    background-color: #003f27;
+    color: #ffffff;
+    border: none;
+    padding: 20px 25px;
+    font-size: 20px;
+    border-radius: 360px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button#swap:hover {
+    background-color: #03a32b;
+}
+
+/* Estilo para o span de taxa de câmbio */
+#tax_info {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Estilo para o botão de modo noturno */
+button#toggle-dark-mode {
+    background-color: #003f27;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+button#toggle-dark-mode:hover {
+    background-color: #03a32b;
+}
+
+/* Estilos para o modo noturno */
+body.dark-mode {
+    background-color: #002c25;
+    color: #ffffff;
+}
+
+body.dark-mode .container {
+    background-color: #3b3b3b;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode select, 
+body.dark-mode input[type="number"] {
+    background-color: #3b3b3b;
+    color: #ffffff;
+    border: 2px solid #006b50;
+}
+
+body.dark-mode button#swap {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode button#swap:hover {
+    background-color: #005f43;
+}
+
+body.dark-mode button#toggle-dark-mode {
+    background-color: #555555;
+}
+
+body.dark-mode button#toggle-dark-mode:hover {
+    background-color: #777777;
+}

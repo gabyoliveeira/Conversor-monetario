@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor Monetário</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- span: vai mostrar o valor das moedas -->
-    <span id="tax_info"></span> 
-    <div>
-        <!-- select:  vai listar as moedas com dois input onde sera calculado o valor -->
-        <select id="from_currency"></select>
-        <input type="number" id="from_ammount" value="1"/>  
+    <div class="container">
+        <h1>Conversor Monetário</h1>
+        <!-- span: vai mostrar o valor das moedas -->
+        <span id="tax_info"></span> 
+        <div class="form-group">
+            <!-- select: vai listar as moedas com dois input onde sera calculado o valor -->
+            <label for="from_currency"></label>
+            <select id="from_currency"></select>
+            <label for="from_ammount"></label>
+            <input type="number" id="from_ammount" value="1"/>  
+        </div>
+        <!-- swap: fazer a troca dos valores dos select -->
+        <button id="swap">⇅</button>
+        <div class="form-group">
+            <label for="to_currency"></label>
+            <select id="to_currency"></select>
+            <label for="to_ammount"></label>
+            <input type="number" id="to_ammount"/>
+        </div>
+        <button id="toggle-dark-mode">Modo noturno</button>
     </div>
-    <!-- swap:  fazer a troca dos valores dos select -->
-    <button id="swap">⇅</button>
-    <div>
-        <select id="to_currency"></select>
-        <input type="number" id="to_ammount"/>
-    </div>
+    <script src="conversor.js"></script>
 </body>
 </html>
